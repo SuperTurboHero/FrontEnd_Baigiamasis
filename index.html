@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tomas Docka - FrontEnd</title>
+</head>
+<body>
+
+    <section class="mainContainer">
+
+    <!-- pirma uzduotis -->
+        <div class="sectionContainer" id="showHideCube">
+            <div class="taskContainer1">
+                <h1>Show or Hide Cube</h1>
+                
+                <button id="fadeToggle">Show / Hide</button>
+                <label for="fadeToggle">(press to show or hide cube)</label>
+                <div class="cube1"></div>
+            </div>
+        </div>
+
+    <!-- antra uzduotis -->
+        <div class="sectionContainer" id="changeCubeProperties">
+            <div class="taskContainer1">
+                <h1>Change Cube Properties</h1>
+                <button id="width">Change Width</button>
+                <button id="height">Change Height</button>
+                <button id="center">Position Center</button>
+                <button id="left">Position Left</button>
+                <label for="width">(press any button above)</label>
+                <div class="cube2" id="cube2"></div>
+            </div>
+        </div>
+
+    <!-- trecia uzduotis -->
+    <div class="menuContainer">
+        <div class="burger" id="burger">
+            <span class="burgerLine"></span>
+            <span class="burgerLine"></span>
+            <span class="burgerLine"></span>
+        </div>
+        <div class="linkContainer" id="linkContainer">
+            <div class="links" id="links">
+                <a href="#showHideCube" id="link">SHOW / HIDE CUB</a>
+                <a href="#changeCubeProperties" id="link">CHANGE CUBE PROPERTIES</a>
+                <a href="#colorRandomizer" id="link">COLOR RANDOMIZER</a>
+                <a href="#tableFiller" id="link">TABLE</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ketvirta uzduotis  -->
+        <div class="sectionContainer" id="colorRandomizer">
+            <div class="taskContainer1">
+                <h1>Color Randomizer</h1>
+                <div class="cubeContainer">
+                    <div class="cube3" id="color1"></div>
+                    <div class="cube3" id="color2"></div>
+                    <div class="cube3" id="color3"></div>
+                    <div class="cube3" id="color4"></div>
+                    <div class="cube3" id="color5"></div>
+                </div>
+                <p>(click on any cube)</p>
+            </div>
+        </div>
+
+    <!-- penkta uzduotis -->
+        <div class="sectionContainer" id="tableFiller">
+                <h1>Table</h1>
+                <div class="taskContainer1">
+                    <form action="" method="GET">
+                        <input type="text" placeholder="Name" id="name" required>
+                        <input type="text" placeholder="Surname" id="surname" required>
+                        <input type="text" placeholder="Date of birth (YYYY-MM-DD)" id="birthDate" required>
+                        <button type="submit" id="submit">Submit</button>
+                    </form>
+    
+                    <table id="table">
+                        <tr>
+                            <th>No.</th>
+                            <th>Name</th>
+                            <th>Surname</th>
+                            <th>Age</th>
+                        </tr>
+                    </table>
+                </div>
+        </div>
+    </section>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
